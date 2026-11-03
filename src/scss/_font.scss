@@ -1,0 +1,9 @@
+.heading-1 {
+    @include font-main;
+    font-weight: 500;
+    font-size: 32px;
+}
+.heading-2 {
+    @include font-main;
+    
+}

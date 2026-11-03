@@ -12,3 +12,8 @@ img,
 video {
   display: block;
 }
+
+@mixin font-main  {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+}

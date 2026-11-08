@@ -1,9 +1,72 @@
-.heading-1 {
+@mixin font-regular{
+    @include font-main;
+    font-weight: 400;
+}
+
+@mixin font-medium {
     @include font-main;
     font-weight: 500;
+}
+
+@mixin font-semiBold {
+    @include font-main;
+    font-weight: 600;
+}
+
+
+.heading-1 {
+    @include font-medium;
     font-size: 32px;
 }
 .heading-2 {
+    @include font-semiBold;
+    font-size: 28px;
+}
+.heading-3 {
+    @include font-semiBold;
+    font-size: 24px;
+}
+.heading-4 {
+    @include font-semiBold(); 
+    font-size: 20px;
+}
+
+
+.p-large {
+    @include font-regular;
+    font-size: 20px;
+}
+.p-semiBold-large {
+    @include font-semiBold; 
+    font-size: 20px;
+}
+.p-medium-medium {
+    @include font-medium;
+    font-size: 16px;
+}
+.p-medium-regular {
+    @include font-regular();
+    font-size: 16px;
+}
+.p-medium-underlined {
+    @include font-regular;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+
+.p-small-light {
     @include font-main;
-    
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.p-small-regular {
+    @include font-regular;
+    font-size: 14px;
+}
+
+.p-small-semiBold {
+    @include font-semiBold; 
+    font-size: 14;
 }
